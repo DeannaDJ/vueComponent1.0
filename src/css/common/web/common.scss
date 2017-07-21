@@ -1,0 +1,279 @@
+/**
+ * 公共样式
+ * @auhtor dujuan.cao
+ */
+@import "var";
+
+// 颜色
+.color-primary,
+a.color-primary {
+    color: $colorPrimary;
+}
+.color-success,
+a.color-success {
+    color: $colorSuccess;
+}
+.color-info,
+a.color-info {
+    color: $colorInfo;
+}
+.color-warning,
+a.color-warning {
+    color: $colorWarning;
+}
+.color-danger,
+a.color-danger {
+    color: $colorDanger;
+}
+.color-gray,
+a.color-gray {
+    color: $colorGray;
+}
+.color-blue,
+a.color-blue {
+    color: $fontBlue;
+}
+.color-green,
+a.color-green {
+    color: $colorGreen;
+}
+.color-main,
+a.color-main {
+    color: $colorMain;
+}
+
+.color-yellow,
+a.color-yellow {
+    color: $colorYellow;
+}
+
+.color-white,
+a.color-white {
+    color: #fff;
+}
+.color-orange,
+a.color-orange {
+    color: $colorOrange;
+}
+
+// 背景色
+.bg-primary {
+    background-color: $colorPrimary;
+}
+.bg-success {
+    background-color: $colorSuccess;
+}
+.bg-danger {
+    background-color: $colorDanger;
+}
+.bg-gray {
+    background-color: $colorGray;
+}
+
+// 字体大小
+.f14 {
+    font-size: 14px;
+}
+.f16 {
+    font-size: 16px;
+}
+.f18 {
+    font-size: 18px;
+}
+.f32 {
+    font-size: 32px;
+}
+// 文本加粗
+.fn-fwb {
+    font-weight: bold;
+}
+// 文本垂直居中
+.fn-vam {
+    vertical-align: middle;
+}
+// 文本垂直居上
+.fn-vat {
+    vertical-align: top;
+}
+// 文本垂直居下
+.fn-vab {
+    vertical-align: bottom;
+}
+
+.fn-vab {
+    vertical-align: bottom;
+}
+
+// 工具方法
+.fn-clear:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.fn-clear {
+    zoom:1;
+}
+.fn-hide {
+    display:none !important;
+}
+.fn-show {
+    display:block !important;
+}
+.fn-left {
+    float:left;
+}
+.fn-right {
+    float:right;
+}
+.fn-red {
+    color: red;
+}
+.fn-text-center {
+    text-align: center;
+}
+.fn-text-left {
+    text-align: left;
+}
+.fn-text-right {
+    text-align: right;
+}
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.fn-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fn-rmb {
+    font-family: "Microsoft YaHei", "STXihei,MingLiu";
+    font-style: normal;
+}
+.fn-tahoma {
+    font-family: tahoma;
+}
+.fn-yahei {
+    font-family: "Microsoft YaHei", "STXihei,MingLiu";
+    font-style: normal;
+}
+
+.fn-yh {
+    font-family: "Microsoft YaHei";
+}
+.fn-break {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.fn-valign-top {
+    vertical-align: text-top;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-static {
+    position: static !important;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-arial {
+    font-family: arial;
+}
+.font-yahei {
+    font-family: "Microsoft YaHei";
+}
+
+.error-dialog {
+    font-size: 14px;
+}
+
+// 上边距
+@for $i from 1 through 10 {
+  .mt#{$i} { margin-top: 1px * $i !important;; }
+}
+
+// 上边距
+@for $i from 0 through 6 {
+  .mt#{$i * 5} { margin-top: 5px * $i !important;; }
+}
+
+// 右边距
+@for $i from 1 through 10 {
+  .mr#{$i} { margin-right: 1px * $i !important;; }
+}
+
+// 右边距
+@for $i from 0 through 6 {
+  .mr#{$i * 5} { margin-right: 5px * $i !important;; }
+}
+
+// 下边距
+@for $i from 0 through 6 {
+  .mb#{$i * 5} { margin-bottom: 5px * $i !important;; }
+}
+
+// 下边距
+@for $i from 1 through 10 {
+  .mb#{$i} { margin-bottom: 1px * $i !important;; }
+}
+
+// 左边距
+@for $i from 0 through 6 {
+  .ml#{$i * 5} { margin-left: 5px * $i !important;; }
+}
+
+// 左边距
+@for $i from 1 through 10 {
+  .ml#{$i} { margin-left: 1px * $i !important;; }
+}
+
+// 上
+@for $i from 0 through 6 {
+  .pt#{$i * 5} { padding-top: 5px * $i !important;; }
+}
+
+// 右边距
+@for $i from 0 through 6 {
+  .pr#{$i * 5} { padding-right: 5px * $i !important;; }
+}
+
+// 下边距
+@for $i from 0 through 6 {
+  .pb#{$i * 5} { padding-bottom: 5px * $i !important;; }
+}
+
+// 左边距
+@for $i from 0 through 6 {
+  .pl#{$i * 5} { padding-left: 5px * $i !important;; }
+}
+
+// 宽度
+@for $i from 1 through 30 {
+  .w#{$i * 10} { width: 10px * $i !important; }
+}
+
+@for $i from 1 through 70 {
+  .w#{$i * 5} { width: 5px * $i !important; }
+}
+
+@for $i from 3 through 10 {
+  .w#{$i * 100} { width: 100px * $i !important; }
+}
+
+// 高度
+@for $i from 1 through 30 {
+  .h#{$i * 10} { height: 10px * $i !important; }
+}
+
+@for $i from 1 through 5 {
+  .maxwidth#{$i * 100} { max-width: 100px * $i !important; }
+}

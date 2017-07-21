@@ -1,0 +1,23 @@
+/**
+ * 图标样式库
+ */
+@font-face {
+    font-family: 'FontQuhuhu';
+    src: url('../images/fonts/iconfont6.eot');
+    src: url('../images/fonts/iconfont6.eot') format('embedded-opentype'),
+    url('../images/fonts/iconfont6.woff') format('woff'),
+    url('../images/fonts/iconfont6.ttf') format('truetype'),
+    url('../images/fonts/iconfont6.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.i-icon {
+    font-family: 'FontQuhuhu' !important;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: initial;
+}

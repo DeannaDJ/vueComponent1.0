@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import "classes";
+
+/**
+ * @class ani
+ * @module Yo
+ */
+
+/**
+ * 定义淡入升起动画
+ * @method show-in-out
+ */
+
+@-webkit-keyframes show-in {
+	0% {
+		-webkit-transform: translate3d(0, 100%, 0);
+	}
+	100% {
+		-webkit-transform: translate3d(0, 0, 0)
+	}
+}
+@keyframes show-in {
+	0% {
+		transform: translate3d(0, 100%, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0)
+	}
+}
+
+@-webkit-keyframes show-out {
+	100% {
+		-webkit-transform: translate3d(0, 100%, 0);
+	}
+	0% {
+		-webkit-transform: translate3d(0, 0, 0)
+	}
+}
+@keyframes show-out {
+	100% {
+		transform: translate3d(0, 100%, 0);
+	}
+	0% {
+		transform: translate3d(0, 0, 0)
+	}
+}
+
+@-webkit-keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.ani.show-in {
+	-webkit-animation-name: show-in;
+	animation-name: show-in;
+}
+
+.ani.show-out {
+	-webkit-animation-name: show-out;
+	animation-name: show-out;
+}
+
+.ani.fade-in {
+	-webkit-animation-name: fade-in;
+	animation-name: fade-in;
+}

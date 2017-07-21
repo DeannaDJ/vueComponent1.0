@@ -1,0 +1,80 @@
+/**
+ * checkbox / radio 选中效果实现
+ */
+.i-checkbox,
+.i-radio {
+    display: inline-block;
+    height: 15px;
+    line-height: 15px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+/*Firefox*/
+@-moz-document url-prefix() {
+    input[type="checkbox"],
+    input[type="radio"] {
+        display: none;
+    }
+}
+input[type="checkbox"]+.i-checkbox,
+input[type="radio"]+.i-radio {
+    padding-left: 18px;
+    vertical-align: middle;
+}
+input[type="checkbox"]+.i-checkbox {
+    background: url(../images/icon-icheck.png) no-repeat 0 0;
+}
+input[type="radio"]+.i-radio {
+    background: url(../images/icon-icheck.png) no-repeat -99px 0;
+}
+input[type="checkbox"]+.i-checkbox:hover {
+    background-position: -20px 0;
+}
+input[type="radio"]+.i-radio:hover {
+    background-position: -119px 0;
+}
+input[type="checkbox"]:checked+.i-checkbox {
+    background-position: -40px 0;
+}
+input[type="radio"]:checked+.i-radio {
+    background-position: -139px 0;
+}
+input[type="checkbox"]:focus+.i-checkbox {
+    background-position: -40px 0;
+}
+input[type="radio"]:focus+.i-radio {
+    background-position: -139px 0;
+}
+input[type="checkbox"]:disabled+.i-checkbox {
+    background-position: -60px 0;
+    &.checked {
+        background-position: -80px 0;
+    }
+}
+input[type="radio"]:disabled+.i-radio {
+    background-position: -160px 0;
+    &.checked {
+        background-position: -180px 0;
+    }
+}
+.label-checkbox,
+.label-radio {
+    display: block;
+}
+.form-inline .label-checkbox,
+.form-inline .label-radio {
+    display: inline-block;
+}
+.ui-select-box .label-checkbox,
+.ui-select-box .label-radio {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

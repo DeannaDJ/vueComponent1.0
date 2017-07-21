@@ -1,0 +1,41 @@
+/**
+ * 变量定义
+ * @auhtor dujuan.cao
+ */
+
+// 颜色值
+// --------------------------------------------------
+$color-active: #58bc62;
+$color-gray: #999999;
+$color-darkgray: #666666;
+$color-main: #333333;
+$color-border: #eaeaea;
+$color-white: #ffffff;
+$bg-gray: #f5f5f5;
+// --------------------------------------------------
+
+// 字体值
+$f15: 15px;
+$f17: 17px;
+
+// 高度值
+$h44: 44px;
+
+// 圆角值
+$borderRadius: 10px;
+
+%flex-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    align-items: center;
+}
