@@ -1,7 +1,7 @@
 <template>
     <div id="wrapper">
         <v-sidebar :configs="configs" :current-key="pageKey"></v-sidebar>
-        <div class="demo-main">
+        <div class="demo-main" style="margin-left: 190px;padding:20px;">
             <router-view class="view" keep-alive></router-view>
         </div>
     </div>
